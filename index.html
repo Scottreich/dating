@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Voting Site</title>
+    <title>CelebDate</title>
     <!-- Scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
@@ -28,12 +28,39 @@
           <input required id="user-heigth" class="form-control" type="text" aria-describedby="username-error">
         </div>
         <div class="form-group">
-          <label for="user-gender">Enter gender:</label>
-          <input required id="user-gender" class="form-control" type="text" aria-describedby="username-error">
+          <p>What is your gender?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="options-gender" id="user-gender-male" value="male" checked>
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="options-gender" id="user-gender-female" value="female">
+              Female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="options-gender" id="user-gender-other" value="other">
+              Other
+            </label>
+          </div>
         </div>
         <div class="form-group">
-          <label for="user-bathe">What is the first part of your body do you wash when bathing?</label>
-          <input required id="user-bathe" class="form-control" type="text" aria-describedby="username-error">
+          <p>What is the first part of your body do you wash when bathing?<p>
+          <select class="form-control">
+            <option value="1">Head</option>
+            <option value="2">Hands</option>
+            <option value="3">Arms</option>
+            <option value="4">Feet</option>
+            <option value="5">Leg</option>
+            <option value="6">Chest</option>
+            <option value="7">Back</option>
+            <option value="8">Stomach</option>
+            <option value="9">Groin</option>
+          </select>
         </div>
       </form>
     </div>
